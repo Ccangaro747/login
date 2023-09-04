@@ -5,8 +5,10 @@
 }
 
 body {
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #ffffff;
     font-family: 'Frutiger-Bold', Arial, sans-serif;
 }
@@ -22,9 +24,9 @@ body {
 
 .container img {
     width: 50%;
+    height: auto;
     cursor: pointer;
     justify-content: center;
-    margin-top: 250px;
 }
 
 /* Estilo para el formulario */
