@@ -21,9 +21,10 @@ body {
 }
 
 .container img {
-    max-width: 100px;
-    height: auto;
+    width: 50%;
     cursor: pointer;
+    justify-content: center;
+    margin-top: 250px;
 }
 
 /* Estilo para el formulario */
