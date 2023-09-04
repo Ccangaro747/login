@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inicie sesión para acceder a su cuenta.">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
     <title>Iniciar Sesión</title>
+    
 </head>
 <body>
     <div class="container">
-        <img src="./Imagenes/logo.png" alt="Imagen de inicio de sesión" class="logo">
+        <img src="./Imagenes/logo.png" alt="Logo de Tu Sitio Web">
         <div class="login-form">
             <form action="procesar_login.php" method="post">
-                <label for="usuario">Usuario</label>
-                <input type="text" id="usuario" name="usuario" required>
-                
-                <label for="contrasena">Contraseña</label>
-                <input type="password" id="contrasena" name="contrasena" required>
-                
-                <input type="submit" id="submit" value="Iniciar sesiòn">
+                <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+                <input type="submit" id="submit" value="Iniciar sesión">
             </form>
         </div>
     </div>
+    <footer>
+        <p>&copy; 2023 Municipalidad de Mercedes. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
-
-
