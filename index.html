@@ -8,18 +8,16 @@
 </head>
 <body>
     <div class="container">
-        <!---->
         <img src="./Imagenes/logo.png" alt="Imagen de inicio de sesión" class="logo">
         <div class="login-form">
-            <h1 class="title">Iniciar Sesión</h1>
             <form action="procesar_login.php" method="post">
-                <label for="usuario">Usuario:</label>
+                <label for="usuario">Usuario</label>
                 <input type="text" id="usuario" name="usuario" required>
                 
-                <label for="contrasena">Contraseña:</label>
+                <label for="contrasena">Contraseña</label>
                 <input type="password" id="contrasena" name="contrasena" required>
                 
-                <input type="submit" value="Acceder">
+                <input type="submit" id="submit" value="Iniciar sesiòn">
             </form>
         </div>
     </div>
