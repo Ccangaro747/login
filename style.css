@@ -1,16 +1,24 @@
+:root {
+    --gris: #777372;
+    --verde: #bed630;
+    --verde-oscuro: #77bf43;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Frutiger-Bold', Arial, sans-serif;
 }
 
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100vh;
     background-color: #ffffff;
-    font-family: 'Frutiger-Bold', Arial, sans-serif;
 }
 
 .container {
@@ -18,12 +26,12 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 800px; /* Limita el ancho del contenido */
-    margin: 0 auto; /* Centra el contenido horizontalmente */
+    max-width: 800px;
+    gap: 20px;
 }
 
 .container img {
-    width: 50%;
+    width: 20%;
     height: auto;
     cursor: pointer;
     justify-content: center;
@@ -32,32 +40,46 @@ body {
 /* Estilo para el formulario */
 
 .login-form {
-    width: 80%; /* Aumenta el ancho del formulario */
-    max-width: 400px; /* Limita el ancho máximo del formulario */
     font-family: 'Frutiger-Bold', Arial, sans-serif;
     background: #ffffff;
     padding: 20px;
-    border: 1px solid #ccc; /* Agrega un borde al formulario */
-    border-radius: 5px; /* Corrige la propiedad 'border-radius' */
+    border: 1px solid #ccc;
+    border-radius: 5px;
     box-shadow: -1px 21px 32px -14px rgba(119, 115, 114, 1);
-    text-align: left; /* Alinea el texto a la izquierda */
+    text-align: left;
 }
 
 .login-form label {
     display: block;
-    margin-bottom: 10px;
-    color: #777372;
+    margin-bottom: 8px;
+    color: var(--gris);
     font-weight: bold;
     font-size: 12px;
 }
 
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 /* Estilo para los campos de entrada */
+
+.container-label {
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.container-label i {
+    color: var(--gris);
+}
 
 .login-form input[type="text"],
 .login-form input[type="password"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 3px;
     box-sizing: border-box;
@@ -65,8 +87,9 @@ body {
 
 .login-form input[type="submit"] {
     width: 100%;
+    margin: 10px 0 5px 0;
     padding: 10px;
-    background-color: #77bf43;
+    background-color: var(--verde-oscuro);
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -75,23 +98,9 @@ body {
 }
 
 .login-form input[type="submit"]:hover {
-    background-color: #bed630;
+    background-color: var(--verde);
 }
 
 .title {
     padding: 15px;
-}
-
-footer {
-    margin: 20px 0px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-}
-
-footer p {
-    font-size: small;
-    padding: 5px;
-    text-align: center;
-    font-weight: 400;
 }

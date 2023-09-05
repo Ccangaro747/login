@@ -8,22 +8,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
-    <title>Iniciar Sesión</title>
-    <link rel="icon" href="/login/Imagenes/logo.png" />
+    <title>ORDENES DE PAGO</title>
+    <link rel="icon" href="/assets/logo-2.png" />
 </head>
 <body>
     <div class="container">
-        <img src="./Imagenes/logo.png" alt="Logo de Tu Sitio Web">
+        <img src="./assets/logo2-sombra.png" alt="Logo de Tu Sitio Web">
         <div class="login-form">
             <form action="procesar_login.php" method="post">
-                <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
-                <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+                <div class="container-label">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+                </div>
+                <div class="container-label">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+                </div>
                 <input type="submit" id="submit" value="Iniciar sesión">
             </form>
         </div>
     </div>
-    <footer>
-        <p>&copy; 2023 Municipalidad de Mercedes. Todos los derechos reservados.</p>
-    </footer>
+    <script src="https://kit.fontawesome.com/a3a0d2e0e8.js" crossorigin="anonymous"></script>
 </body>
 </html>
