@@ -33,7 +33,6 @@ body {
 .container img {
     width: 20%;
     height: auto;
-    cursor: pointer;
     justify-content: center;
 }
 
